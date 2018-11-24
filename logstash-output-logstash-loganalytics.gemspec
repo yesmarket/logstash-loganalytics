@@ -2,11 +2,11 @@ Gem::Specification.new do |s|
   s.name          = 'logstash-output-logstash-loganalytics'
   s.version       = '0.1.0'
   s.licenses      = ['Apache-2.0']
-  s.summary       = 'TODO: Write a short summary, because Rubygems requires one.'
-  s.description   = 'TODO: Write a longer description or delete this line.'
-  s.homepage      = 'TODO: Put your plugin''s website or public repo URL here.'
-  s.authors       = ['']
-  s.email         = ''
+  s.summary       = 'Logstash output plugin for Azure Log Analytics.'
+  s.description   = 'Logstash output plugin to send logs to Azure Log Analytics. Uses Log Analytics HTTP Data Collector API under the hood.'
+  s.homepage      = 'https://github.com/yesmarket/logstash-loganalytics'
+  s.authors       = ['Ryan Bartsch']
+  s.email         = 'rbartsch@adam.com.au'
   s.require_paths = ['lib']
 
   # Files
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.metadata = { "logstash_plugin" => "true", "logstash_group" => "output" }
 
   # Gem dependencies
+  s.add_runtime_dependency "rest-client", "~> 2.0"
   s.add_runtime_dependency "logstash-core-plugin-api", "~> 2.0"
   s.add_runtime_dependency "logstash-codec-plain"
   s.add_development_dependency "logstash-devutils"
