@@ -7,9 +7,8 @@ require 'openssl'
 require 'base64'
 require 'time'
 
-# An logstash-loganalytics output that does nothing.
-class LogStash::Outputs::LogstashLoganalytics < LogStash::Outputs::Base
-  config_name "logstash-loganalytics"
+class LogStash::Outputs::Loganalytics < LogStash::Outputs::Base
+  config_name "loganalytics"
 
   # Your Operations Management Suite workspace ID
   config :customer_id, :validate => :string, :required => true

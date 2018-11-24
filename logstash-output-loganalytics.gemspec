@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
-  s.name          = 'logstash-output-logstash-loganalytics'
+  s.name          = 'logstash-output-loganalytics'
   s.version       = '0.1.0'
   s.licenses      = ['Apache-2.0']
   s.summary       = 'Logstash output plugin for Azure Log Analytics.'
   s.description   = 'Logstash output plugin to send logs to Azure Log Analytics. Uses Log Analytics HTTP Data Collector API under the hood.'
-  s.homepage      = 'https://github.com/yesmarket/logstash-loganalytics'
+  s.homepage      = 'https://github.com/yesmarket/logstash-output-loganalytics'
   s.authors       = ['Ryan Bartsch']
   s.email         = 'rbartsch@adam.com.au'
   s.require_paths = ['lib']
