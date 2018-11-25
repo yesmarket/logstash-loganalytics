@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-output-loganalytics'
-  s.version       = '0.1.0'
+  s.version       = '0.2.0'
   s.licenses      = ['Apache-2.0']
   s.summary       = 'Logstash output plugin for Azure Log Analytics.'
   s.description   = 'Logstash output plugin to send logs to Azure Log Analytics. Uses Log Analytics HTTP Data Collector API under the hood.'
